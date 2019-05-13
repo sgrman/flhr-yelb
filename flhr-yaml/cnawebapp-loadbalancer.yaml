@@ -75,7 +75,7 @@ spec:
     spec:
       containers:
       - name: yelb-ui
-        image:  harbor.flhrnet.local/library/yelb-ui:1
+        image:  harbor.flhrnet.local/yelb/yelb-ui:1
         ports:
         - containerPort: 80
 ---
@@ -93,7 +93,7 @@ spec:
     spec:
       containers:
       - name: redis-server
-        image: harbor.flhrnet.local/library/yelb-redis:v1
+        image: harbor.flhrnet.local/yelb/yelb-redis:1
         ports:
         - containerPort: 6379
 ---
@@ -111,7 +111,7 @@ spec:
     spec:
       containers:
       - name: yelb-db
-        image:  harbor.flhrnet.local/library/yelb-db:v1
+        image:  harbor.flhrnet.local/yelb/yelb-db:1
         ports:
         - containerPort: 5432
 ---
@@ -129,7 +129,7 @@ spec:
     spec:
       containers:
       - name: yelb-appserver
-        image:  harbor.flhrnet.local/library/yelb-appserver:v1
+        image:  harbor.flhrnet.local/yelb/yelb-appserver:1
         ports:
         - containerPort: 4567
 
